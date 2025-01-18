@@ -1,0 +1,66 @@
+[
+    {
+        "model": "announcements.Category",
+        "pk": 1,
+        "fields":{
+            "title":"Нерухомість",
+            "icon":"<i class=\"fa-solid fa-house\"></i>"
+        }
+    },
+    {
+        "model": "announcements.Category",
+        "pk": 2,
+        "fields":{
+            "title":"Транспорт",
+            "icon":"<i class=\"fa-solid fa-car-rear\"></i>"
+        }
+    },
+    {
+        "model": "announcements.Category",
+        "pk": 3,
+        "fields":{
+            "title":"Будівництво",
+            "icon":"<i class=\"fa-solid fa-screwdriver-wrench\"></i>"
+        }
+    },
+    {
+        "model": "announcements.Category",
+        "pk": 4,
+        "fields":{
+            "title":"Дім, сад",
+            "icon":"<i class=\"fa-solid fa-seedling\"></i>"
+        }
+    },
+    {
+        "model": "announcements.Category",
+        "pk": 5,
+        "fields":{
+            "title":"Робота",
+            "icon":"<i class=\"fa-solid fa-briefcase\"></i>"
+        }
+    },
+    {
+        "model": "announcements.Category",
+        "pk": 6,
+        "fields":{
+            "title":"Електроніка",
+            "icon":"<i class=\"fa-solid fa-computer\"></i>"
+        }
+    },
+    {
+        "model": "announcements.Category",
+        "pk": 7,
+        "fields":{
+            "title":"Послуги",
+            "icon":"<i class=\"fa-regular fa-comments\"></i>"
+        }
+    },
+    {
+        "model": "announcements.Category",
+        "pk": 8,
+        "fields":{
+            "title":"Краса, здоров'я",
+            "icon":"<i class=\"fa-solid fa-notes-medical\"></i>"
+        }
+    }
+]

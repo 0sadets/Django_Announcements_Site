@@ -1,0 +1,143 @@
+[
+    {
+      "model": "announcements.Announcement",
+      "pk": 1,
+      "fields": {
+        "title": "Продаж 2-кімнатної квартири",
+        "category_id": "1",
+        "image": "https://img.rieltor.ua/crop/500x375/offers/802/2/2/1818608992457802.jpg",
+        "price": "50000",
+        "location": "Київ",
+        "desc": "Продається затишна квартира в центрі Києва. Загальна площа 65 м², новий ремонт, меблі, техніка. Усі документи готові до продажу.",
+        "is_active": "True",
+        "created_at": "2023-11-01"
+      }
+    },
+    {
+      "model": "announcements.Announcement",
+      "pk": 2,
+      "fields": {
+        "title": "Оренда офісу",
+        "category_id": "1",
+        "image": "https://www.real-estate.lviv.ua/img/objects/800x600/97/b5/97b5766e2ef0071ba2f1d8820618ef07.jpg",
+        "price": "15000",
+        "location": "Львів",
+        "desc": "Здається в оренду офіс на 3 поверсі бізнес-центру. Площа 120 м², парковка, охорона. Поруч метро.",
+        "is_active": "True",
+        "created_at": "2023-11-01"
+      }
+    },
+    {
+      "model": "announcements.Announcement",
+      "pk": 3,
+      "fields": {
+        "title": "Продаж легкового автомобіля",
+        "category_id": "2",
+        "image": "https://cdn3.riastatic.com/photosnew/auto/photo/skoda_octavia__582497227fx.jpg",
+        "price": "12000",
+        "location": "Одеса",
+        "desc": "Продається автомобіль Skoda Octavia 2017 року. Пробіг 80 тис. км, бензиновий двигун, автоматична коробка передач. Чудовий стан!",
+        "is_active": "True",
+        "created_at": "2023-11-01"
+      }
+    },
+    {
+      "model": "announcements.Announcement",
+      "pk": 4,
+      "fields": {
+        "title": "Оренда мікроавтобуса",
+        "category_id": "2",
+        "image": "https://cdn0.riastatic.com/photosnew/auto/photo/mercedes-benz_t2__564430910bx.jpg",
+        "price": "2000",
+        "location": "Харків",
+        "desc": "Здається в оренду мікроавтобус для перевезення вантажів або пасажирів. Подача в будь-який район міста. Гнучкі умови оренди.",
+        "is_active": "True",
+        "created_at": "2023-11-01"
+      }
+    },
+    {
+      "model": "announcements.Announcement",
+      "pk": 5,
+      "fields": {
+        "title": "Продаж будівельних матеріалів",
+        "category_id": "3",
+        "image": "https://www.kontilium-budmat.if.ua/wp-content/uploads/2021/08/123-1.png",
+        "price": "10000",
+        "location": "Запоріжжя",
+        "desc": "Продаємо цеглу, бетон, арматуру та інші будівельні матеріали за вигідними цінами. Доставка по всій Україні.",
+        "is_active": "True",
+        "created_at": "2023-11-01"
+      }
+    },
+    {
+      "model": "announcements.Announcement",
+      "pk": 6,
+      "fields": {
+        "title": "Оренда будівельного крана",
+        "category_id": "3",
+        "image": "https://viramax.ua/wp-content/uploads/2024/02/WhatsApp-Image-2024-01-03-at-17.40.54-1.jpg",
+        "price": "30000",
+        "location": "Дніпро",
+        "desc": "Оренда баштового крана для будівельних робіт. Обслуговування техніки входить у вартість. Працюємо по договору.",
+        "is_active": "True",
+        "created_at": "2023-11-01"
+      }
+    },
+    {
+      "model": "announcements.Announcement",
+      "pk": 7,
+      "fields": {
+        "title": "Ліжко двоспальне",
+        "category_id": "4",
+        "image": "https://images.prom.ua/1212248679_lizhko-dvospalne-v.jpg",
+        "price": "15000",
+        "location": "Івано-Франківськ",
+        "desc": "Продаємо меблі для дому: ліжка, шафи, дивани. Великий вибір стилів та кольорів. Гарантія на продукцію 2 роки.",
+        "is_active": "True",
+        "created_at": "2023-11-01"
+      }
+    },
+    {
+      "model": "announcements.Announcement",
+      "pk": 8,
+      "fields": {
+        "title": "Саджанці фруктових дерев",
+        "category_id": "4",
+        "image": "https://traskovskyi.ua/files/products/1richka2023_2.1380x1900.jpg",
+        "price": "100",
+        "location": "Тернопіль",
+        "desc": "Продаємо саджанці яблунь, груш, вишень. Висока якість посадкового матеріалу. Доставка по Україні.",
+        "is_active": "True",
+        "created_at": "2023-11-01"
+      }
+    },
+    {
+      "model": "announcements.Announcement",
+      "pk": 9,
+      "fields": {
+        "title": "Вакансія: Програміст",
+        "category_id": "5",
+        "image": "https://ye.ua/images/news/_Scho_potribno_rozumiti_maybutnomu_programistu_1_2022_02_17_10_51_16.jpeg",
+        "price": "30000",
+        "location": "Київ",
+        "desc": "Шукаємо програміста з досвідом роботи з Python. Гнучкий графік, можливість віддаленої роботи, цікаві проекти.",
+        "is_active": "True",
+        "created_at": "2023-11-01"
+      }
+    },
+    {
+      "model": "announcements.Announcement",
+      "pk": 10,
+      "fields": {
+        "title": "Робота для водія",
+        "category_id": "5",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpmBdYjRHpRQ7RFEPjEFvrjtnV6JjT3VwlSg&s",
+        "price": "20000",
+        "location": "Одеса",
+        "desc": "Шукаємо водія на вантажний автомобіль. Вимоги: досвід роботи, права категорії C. Стабільна заробітна плата, офіційне працевлаштування.",
+        "is_active": "True",
+        "created_at": "2023-11-01"
+      }
+    }
+  ]
+  

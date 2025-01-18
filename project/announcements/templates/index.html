@@ -1,0 +1,25 @@
+<!-- templates/home.html -->
+{% extends 'base.html' %}
+{% block content %}
+<h1 class="text-center">Оберіть категорію:</h1>
+{% if categories|length <= 0 %}<p> No category available </p>
+{% endif %}
+
+<div class="d-flex flex-row m-4 flex-wrap justify-content-center">
+    {% for i in categories %}
+    <a href="{% url 'list'  i.id %}" style="text-decoration: none;">
+
+        <div class="card m-2" style="width: 18rem;">
+            
+            <div class="card-body  d-flex flex-row">
+                <div class="icon p-2 d-flex justify-content-center align-items-center border rounded-circle" 
+                style="width: 50px; height: 50px; background-color: #f0f0f0;">
+                {{ i.icon|safe }}
+                </div>
+                <h5 class="card-title p-2">{{i.title}}</h5></p>
+            </div>
+        </div>
+    </a>
+      {% endfor %}
+</div>
+{% endblock %}
