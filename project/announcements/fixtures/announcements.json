@@ -5,7 +5,7 @@
       "fields": {
         "title": "Продаж 2-кімнатної квартири",
         "category_id": "1",
-        "image": "https://img.rieltor.ua/crop/500x375/offers/802/2/2/1818608992457802.jpg",
+        "image": "https://media.istockphoto.com/id/182756522/photo/modern-condominium-building-exterior.jpg?s=612x612&w=0&k=20&c=ZCWnHlDVyfNC-KLVxHR54DtKtSwYt0FV-aK_t2Mu_fE=",
         "price": "50000",
         "location": "Київ",
         "desc": "Продається затишна квартира в центрі Києва. Загальна площа 65 м², новий ремонт, меблі, техніка. Усі документи готові до продажу.",
@@ -19,7 +19,7 @@
       "fields": {
         "title": "Оренда офісу",
         "category_id": "1",
-        "image": "https://www.real-estate.lviv.ua/img/objects/800x600/97/b5/97b5766e2ef0071ba2f1d8820618ef07.jpg",
+        "image": "https://media.istockphoto.com/id/173749889/photo/main-office-building-entrance.jpg?s=612x612&w=0&k=20&c=gbVRDzR6YJ1XefxvwVMoJfQNJa6MNkGuCPwDBGEiFUY=",
         "price": "15000",
         "location": "Львів",
         "desc": "Здається в оренду офіс на 3 поверсі бізнес-центру. Площа 120 м², парковка, охорона. Поруч метро.",
@@ -33,7 +33,7 @@
       "fields": {
         "title": "Продаж легкового автомобіля",
         "category_id": "2",
-        "image": "https://cdn3.riastatic.com/photosnew/auto/photo/skoda_octavia__582497227fx.jpg",
+        "image": "https://cdn1.riastatic.com/photosnew/auto/photo/skoda_octavia-scout__542549236f.jpg",
         "price": "12000",
         "location": "Одеса",
         "desc": "Продається автомобіль Skoda Octavia 2017 року. Пробіг 80 тис. км, бензиновий двигун, автоматична коробка передач. Чудовий стан!",
@@ -61,7 +61,7 @@
       "fields": {
         "title": "Продаж будівельних матеріалів",
         "category_id": "3",
-        "image": "https://www.kontilium-budmat.if.ua/wp-content/uploads/2021/08/123-1.png",
+        "image": "https://media.istockphoto.com/id/172746825/photo/forklift-loading-stacks-of-boards.jpg?s=612x612&w=0&k=20&c=EjXgQXMZJYQV1rThrOR7IDLUOQWS25q3kozCj6tSEf8=",
         "price": "10000",
         "location": "Запоріжжя",
         "desc": "Продаємо цеглу, бетон, арматуру та інші будівельні матеріали за вигідними цінами. Доставка по всій Україні.",
@@ -75,7 +75,7 @@
       "fields": {
         "title": "Оренда будівельного крана",
         "category_id": "3",
-        "image": "https://viramax.ua/wp-content/uploads/2024/02/WhatsApp-Image-2024-01-03-at-17.40.54-1.jpg",
+        "image": "https://media.istockphoto.com/id/93046508/photo/great-crane.jpg?s=612x612&w=0&k=20&c=LJdb09z_6yHwKfZHoXsPwhdi3MIefEXlMIClN29545I=",
         "price": "30000",
         "location": "Дніпро",
         "desc": "Оренда баштового крана для будівельних робіт. Обслуговування техніки входить у вартість. Працюємо по договору.",
@@ -89,7 +89,7 @@
       "fields": {
         "title": "Ліжко двоспальне",
         "category_id": "4",
-        "image": "https://images.prom.ua/1212248679_lizhko-dvospalne-v.jpg",
+        "image": "https://media.istockphoto.com/id/1432826326/photo/mockup-frame-in-cozy-bedroom-interior-background.jpg?s=612x612&w=0&k=20&c=f_N3OdL1HpwUSIzDIp9wevBu_LEzaWYERLoPArOWGM0=",
         "price": "15000",
         "location": "Івано-Франківськ",
         "desc": "Продаємо меблі для дому: ліжка, шафи, дивани. Великий вибір стилів та кольорів. Гарантія на продукцію 2 роки.",
@@ -103,7 +103,7 @@
       "fields": {
         "title": "Саджанці фруктових дерев",
         "category_id": "4",
-        "image": "https://traskovskyi.ua/files/products/1richka2023_2.1380x1900.jpg",
+        "image": "https://media.istockphoto.com/id/178536819/photo/soybean-seedlings-in-various-stages-of-growth.jpg?s=612x612&w=0&k=20&c=W05MEqv0Ff5XAosOpDZ17XpqBXeg_-NK3iyDJ0Nst0c=",
         "price": "100",
         "location": "Тернопіль",
         "desc": "Продаємо саджанці яблунь, груш, вишень. Висока якість посадкового матеріалу. Доставка по Україні.",
@@ -117,7 +117,7 @@
       "fields": {
         "title": "Вакансія: Програміст",
         "category_id": "5",
-        "image": "https://ye.ua/images/news/_Scho_potribno_rozumiti_maybutnomu_programistu_1_2022_02_17_10_51_16.jpeg",
+        "image": "https://media.istockphoto.com/id/1302754079/photo/programmers-cooperating-brainstorming-at-information-technology-company.jpg?s=612x612&w=0&k=20&c=lTv4BeCnq96aEnsf4SVUiyNQhu8z8QIGx4xw_c79-To=",
         "price": "30000",
         "location": "Київ",
         "desc": "Шукаємо програміста з досвідом роботи з Python. Гнучкий графік, можливість віддаленої роботи, цікаві проекти.",
@@ -131,10 +131,24 @@
       "fields": {
         "title": "Робота для водія",
         "category_id": "5",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpmBdYjRHpRQ7RFEPjEFvrjtnV6JjT3VwlSg&s",
+        "image": "https://media.istockphoto.com/id/1396633281/photo/it-is-time-to-hit-the-road-again.jpg?s=612x612&w=0&k=20&c=3F70sNGbHyb35mlEo7v9his85j4TvI7-_o_aJJKYNtc=",
         "price": "20000",
         "location": "Одеса",
         "desc": "Шукаємо водія на вантажний автомобіль. Вимоги: досвід роботи, права категорії C. Стабільна заробітна плата, офіційне працевлаштування.",
+        "is_active": "True",
+        "created_at": "2023-11-01"
+      }
+    },
+    {
+      "model": "announcements.Announcement",
+      "pk": 11,
+      "fields": {
+        "title": "Продаж легкового автомобіля",
+        "category_id": "2",
+        "image": "https://cdn1.riastatic.com/photosnew/auto/photo/skoda_octavia__581870886bx.jpg",
+        "price": "12000",
+        "location": "Одеса",
+        "desc": "Продається автомобіль Skoda Octavia 2017 року. Пробіг 80 тис. км, бензиновий двигун, автоматична коробка передач. Чудовий стан!",
         "is_active": "True",
         "created_at": "2023-11-01"
       }
