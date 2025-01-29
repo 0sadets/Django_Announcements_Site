@@ -1,0 +1,34 @@
+{% extends 'components/base.html' %} {% block content %}
+<h1 class="text-center m-2">Створити нове оголошення</h1>
+<div class="d-flex justify-content-center mb-5">
+  <form method="post" class="w-50 d-flex flex-column justify-content-center">
+    {% csrf_token %}
+    <div class="mb-3">
+      <label class="form-label">{{ form.title.label }}</label>
+      {{ form.title }}
+    </div>
+    <div class="mb-3">
+      <label class="form-label">{{ form.category.label }}</label>
+      {{ form.category }}
+    </div>
+    <div class="mb-3">
+      <label class="form-label">{{ form.image.label }}</label>
+      {{ form.image }}
+    </div>
+    <div class="mb-3">
+      <label class="form-label">{{ form.location.label }}</label>
+      {{ form.location }}
+    </div>
+    <div class="mb-3">
+      <label class="form-label">{{ form.price.label }}</label>
+      {{ form.price }}
+    </div>
+    <div class="mb-3">
+      <label class="form-label">{{ form.desc.label }}</label>
+      {{ form.desc }}
+    </div>
+    <button type="submit" class="btn btn btn-outline-success">Створити</button>
+  </form>
+</div>
+
+{% endblock %}

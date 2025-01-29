@@ -4,7 +4,7 @@
         "pk": 1,
         "fields":{
             "title":"Нерухомість",
-            "icon":"<i class=\"fa-solid fa-house\"></i>"
+            "icon":"fa-solid fa-house"
         }
     },
     {
@@ -12,7 +12,7 @@
         "pk": 2,
         "fields":{
             "title":"Транспорт",
-            "icon":"<i class=\"fa-solid fa-car-rear\"></i>"
+            "icon":"fa-solid fa-car-rear"
         }
     },
     {
@@ -20,7 +20,7 @@
         "pk": 3,
         "fields":{
             "title":"Будівництво",
-            "icon":"<i class=\"fa-solid fa-screwdriver-wrench\"></i>"
+            "icon":"fa-solid fa-screwdriver-wrench"
         }
     },
     {
@@ -28,7 +28,7 @@
         "pk": 4,
         "fields":{
             "title":"Дім, сад",
-            "icon":"<i class=\"fa-solid fa-seedling\"></i>"
+            "icon":"fa-solid fa-seedling"
         }
     },
     {
@@ -36,7 +36,7 @@
         "pk": 5,
         "fields":{
             "title":"Робота",
-            "icon":"<i class=\"fa-solid fa-briefcase\"></i>"
+            "icon":"fa-solid fa-briefcase"
         }
     },
     {
@@ -44,7 +44,7 @@
         "pk": 6,
         "fields":{
             "title":"Електроніка",
-            "icon":"<i class=\"fa-solid fa-computer\"></i>"
+            "icon":"fa-solid fa-computer"
         }
     },
     {
@@ -52,7 +52,7 @@
         "pk": 7,
         "fields":{
             "title":"Послуги",
-            "icon":"<i class=\"fa-regular fa-comments\"></i>"
+            "icon":"fa-regular fa-comments"
         }
     },
     {
@@ -60,7 +60,16 @@
         "pk": 8,
         "fields":{
             "title":"Краса, здоров'я",
-            "icon":"<i class=\"fa-solid fa-notes-medical\"></i>"
+            "icon":"fa-solid fa-notes-medical"
+        }
+    },
+    {
+        "model": "announcements.Category",
+        "pk": 8,
+        "fields":{
+            "title":"Без категорії",
+            "icon":"fa-solid fa-question"
         }
     }
+
 ]

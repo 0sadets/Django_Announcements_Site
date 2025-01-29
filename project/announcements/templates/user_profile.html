@@ -1,0 +1,113 @@
+{% extends 'components/base.html' %} {% block content %}
+<h2 class="text-center my-4">Особистий кабінет</h2>
+<div
+  class="d-flex flex-column justify-content-center align-items-center flex-wrap"
+>
+  <div
+    class="d-flex flex-row justify-content-around align-items-stretch pb-4 mt-3"
+    style="width: 80%"
+  >
+    <!-- first col -->
+    <div
+      class="d-flex flex-row justify-content-center align-items-center border rounded col-5 p-3"
+    >
+      <div>
+        <img class="n-1" style="width: 200px" src="../static/images/user.jpg" />
+      </div>
+      <div>
+        <p class="fs-3 m-0 p-0 text-center" style="color: green">
+          {{user.username}}
+        </p>
+        <div
+          class="w-100 d-flex flex-row justify-content-between align-items-center"
+        >
+          <span class="d-flex flex-column align-items-start">
+            <i class="fa-regular fa-envelope p-1 ml-3"></i>
+            <i class="fa-solid fa-phone m-1 mr-2"></i>
+            <i class="fa-solid fa-link m-1 mr-2"></i>
+            <i class="fa-regular fa-heart m-1 mr-2"></i>
+          </span>
+          <span class="d-flex flex-column align-items-start ps-3">
+            <p class="m-0">{{user.email}}</p>
+            <p class="m-0">{{user.phone_number}}</p>
+            <p class="m-0">
+              <a
+                href="{{user.social_link}}"
+                class="card-link"
+                style="text-decoration: none; color: black"
+                >Соціальна Мережа</a
+              >
+            </p>
+            <p class="m-0">Улюблені</p>
+          </span>
+        </div>
+      </div>
+    </div>
+    <!-- second col -->
+
+    <div class="col-5 border rounded p-3">
+      <h3 class="text-center mb-3">Категорії ваших оголошень</h3>
+      <ul
+        class="list-group p-2 border"
+        style="height: 200px; overflow-y: auto; background-color: lightgray"
+      >
+        {% for category in categories %}
+        <a
+          href="{% url 'user_announcements_by_category' category.category__title %}
+        "
+          style="text-decoration: none; color: black"
+        >
+          <li class="d-flex align-items-center border-bottom p-2">
+            <div
+              class="icon p-2 d-flex justify-content-center align-items-center border rounded-circle me-3"
+              style="width: 50px; height: 50px; background-color: #f0f0f0"
+            >
+              <i class="{{ category.category__icon }}"></i>
+            </div>
+            <h5 class="card-title p-2">{{ category.category__title }}</h5>
+            <span class="ms-auto text-muted">
+              {{ category.total_announcements }} оголошень
+            </span>
+          </li>
+        </a>
+        {% empty %}
+        <li class="list-group-item">У вас немає оголошень.</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div
+    class="d-flex justify-content-center w-100 position-absolute bottom-0 p-4 m-4"
+  >
+    <div
+      class="btn-group btn-group-lg w-75"
+      role="group"
+      aria-label="Large button group"
+    >
+      <a
+        href="{% url 'user_announcements'%}"
+        class="btn btn-outline-success"
+        style="width: 33%"
+      >
+        Мої оголошення
+      </a>
+      <a
+        href="{% url 'create_ann'%}"
+        class="btn btn-outline-success"
+        style="width: 33%"
+      >
+        Створити оголошення
+      </a>
+
+      <a
+        href="{% url 'logout' %}"
+        class="btn btn-outline-success"
+        style="width: 33%"
+        onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+      >
+        Вийти
+      </a>
+    </div>
+  </div>
+</div>
+{% endblock %}

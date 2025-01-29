@@ -1,0 +1,101 @@
+{% extends 'components/base.html' %} {% block content %}
+
+<div
+  class="container border-end border-start text-center p-4 w-100 d-flex align-items-center justify-content-center"
+>
+  <div class="w-75">
+    <div class="d-flex align-items-start py-2">
+      {% include 'components/back_btn.html' %}
+    </div>
+    <div class="d-flex flex-column align-items-start">
+      <h2>{{item.title}}</h2>
+      <span class="w-25 d-flex flex-row align-items-start">
+        <p class="fs-6 m-0" style="color: gray">{{item.created_at}}</p>
+        <a
+          class="fs-6 ms-4"
+          style="color: gray"
+          href="{% url 'user_profile' item.author.id %}"
+          >{{item.author}}</a
+        >
+      </span>
+    </div>
+    <div class="row justify-content-between">
+      <div class="col-md-3 mt-5">
+        <img
+          class="n-1 img-card border border-black rounded"
+          style="
+            width: auto;
+            height: 400px;
+            object-fit: cover;
+            object-position: center;
+          "
+          src="{{item.image}}"
+          alt="{{item.title}}"
+        />
+      </div>
+      <div class="mt-5" style="max-width: 500px">
+        <p class="border-bottom pb-3">{{item.desc}}</p>
+        <div class="w-100 d-flex flex-row align-items-end">
+          <div
+            class="d-flex flex-row w-50 justify-content-between align-items-center pe-4 border-end"
+          >
+            <span class="text-start">
+              <p>Категорія:</p>
+              <p>Розташування:</p>
+              <p>Ціна:</p>
+            </span>
+            <span class="text-end">
+              <p>
+                <a
+                  style="color: black"
+                  href="{% url  'list' item.category.id %}"
+                  >{{item.category}}</a
+                >
+              </p>
+              <p>{{item.location}}</p>
+              <p>{{item.price}}</p>
+            </span>
+          </div>
+
+          <div
+            class="d-flex flex-row w-50 justify-content-between align-items-center ps-4"
+          >
+            <span class="text-start">
+              <p>Автор:</p>
+              <p>Номер:</p>
+              <p>Пошта:</p>
+            </span>
+            <span class="text-end">
+              <p>
+                <a
+                  href="{% url 'user_profile' item.author.id %}"
+                  style="text-decoration: none; color: black"
+                  >{{item.author}}</a
+                >
+              </p>
+              <p>{{item.author.phone_number}}</p>
+              <p>{{item.author.email}}</p>
+            </span>
+          </div>
+        </div>
+        {% if request.user == item.author %}
+        <div class="w-100 align-items-center p-4">
+          <a
+            href="{% url 'delete' item.id %}"
+            class="btn btn-outline-danger btn-sm me-4"
+          >
+            <i class="fa-regular fa-trash-can"></i>
+          </a>
+          <a
+            href="{% url 'edit_announcement' item.id %}"
+            class="btn btn-outline-secondary btn-sm ms-4"
+          >
+            <i class="fa-solid fa-pen"></i>
+          </a>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,24 +1,52 @@
-{% extends 'base.html' %} {% block content %} {% if announcements|length <= 0 %}
-<p>No announcement available</p>
+{% extends 'components/base.html' %} {% block content %}
+<div class="d-flex justify-content-between align-items-center p-4">
+  <a
+    href="/"
+    class="btn btn-outline-dark"
+    style="
+      --bs-btn-padding-y: 0.25rem;
+      --bs-btn-padding-x: 0.5rem;
+      --bs-btn-font-size: 0.75rem;
+    "
+  >
+    <i class="fa-solid fa-arrow-left"></i>
+  </a>
+
+  <h3 class="text-center m-2">Список оголошень категорії {{category.title}}</h3>
+  <div></div>
+</div>
+{% if announcements|length <= 0 %}
+<p class="text-center m-4">Немає доступних оголошеннь</p>
+<a
+  href="{% url 'delete_cat' category.id%}"
+  class="d-flex justify-content-center align-items-center w-100"
+  style="text-decoration: none"
+>
+  <button type="button" class="btn btn-outline-danger">
+    Видалити категорію
+  </button>
+</a>
 
 {% endif %}
 <div class="d-flex flex-row flex-wrap justify-content-around p-4">
   {% for i in announcements %}
-  <div class="card mb-3" style="max-width: 540px">
+  <div class="card mb-3 col-6 img-card" style="max-width: 540px">
     <div class="row g-0">
       <div class="col-md-4 text-center">
-        <img
-          style="
-            width: auto;
-            height: 200px;
-            object-fit: cover;
-            object-position: center;
-          "
-          src="{{i.image}}"
-          alt="{{i.title}}"
-          class="rounded img-card"
-          alt="..."
-        />
+        <a href="{% url 'details' i.id %}">
+          <img
+            style="
+              width: auto;
+              height: 200px;
+              object-fit: cover;
+              object-position: center;
+            "
+            src="{{i.image}}"
+            alt="{{i.title}}"
+            class="rounded img-card my-2"
+            alt="..."
+          />
+        </a>
       </div>
       <div class="col-md-8">
         <div class="card-body">
@@ -44,13 +72,20 @@
             <p class="m-0 text-center">{{i.location}}</p>
           </span>
           <p class="card-text">
-            <span class="d-flex flex-row justify-content-between">
-              <a href="#" class="btn btn-outline-success mr-2 btn-sm"
+            <span class="d-flex flex-row justify-content-between mt-3">
+              <a
+                href="{% url 'details' i.id %}"
+                class="btn btn-outline-success mr-2 btn-sm"
                 >Більше..</a
               >
-              <a href="/delete/{{i.id}}" class="btn btn-outline-danger btn-sm">
+              {% if request.user == i.author %}
+              <a
+                href="{% url 'delete' i.id %}"
+                class="btn btn-outline-danger btn-sm"
+              >
                 <i class="fa-regular fa-trash-can"></i>
               </a>
+              {% endif %}
             </span>
           </p>
         </div>

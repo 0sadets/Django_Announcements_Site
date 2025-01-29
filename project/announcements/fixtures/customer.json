@@ -1,0 +1,14 @@
+[
+    {
+        "model":"CustomUser",
+        "pk":1,
+        "fields":{
+            "username":"usname",
+            "email":"email@gmail.com",
+            "phone_number":"09686868680",
+            "social_link":"https/dfsfsdf",
+            "password1":"dasad",
+            "password2":"dasad"
+        }
+    }
+]
