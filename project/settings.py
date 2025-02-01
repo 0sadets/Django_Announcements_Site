@@ -8,7 +8,7 @@ SECRET_KEY = 'django-insecure-dr#sq0$^+)2-_*at@h7$g4!+ebrgzwr6uokg96t1c1&8oo-g%o
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['django-announcements.azurewebsites.net']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -18,7 +18,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'announcements',
-    'django-announcements.azurewebsites.net'
+    
 ]
 
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
